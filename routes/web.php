@@ -6,21 +6,36 @@
  */
 
 // Switch between the included languages
-Route::get('lang/{lang}', 'LanguageController');
+// Route::get('lang/{lang}', 'LanguageController');
+Route::group([
+    'namespace' => 'App\Http\Controllers',
+], function () {
+    Route::get('lang/{lang}', 'LanguageController');
+});
 
 /*
  * Frontend Routes
  * Namespaces indicate folder structure
  */
-Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
-    include_route_files(__DIR__.'/frontend/');
+Route::group([
+    // 'namespace' => 'Frontend',
+    'namespace' => '',
+    'as' => 'frontend.',
+], function () {
+    include_route_files(__DIR__ . '/frontend/');
 });
 
 /*
  * Backend Routes
  * Namespaces indicate folder structure
  */
-Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'admin'], function () {
+Route::group([
+    // 'namespace' => 'Backend',
+    'namespace' => '',
+    'prefix' => 'admin',
+    'as' => 'admin.',
+    'middleware' => 'admin',
+], function () {
     /*
      * These routes need view-backend permission
      * (good if you want to allow more than one group in the backend,
@@ -29,5 +44,5 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'admin.', '
      * Note: Administrator has all permissions so you do not have to specify the administrator role everywhere.
      * These routes can not be hit if the password is expired
      */
-    include_route_files(__DIR__.'/backend/');
+    include_route_files(__DIR__ . '/backend/');
 });

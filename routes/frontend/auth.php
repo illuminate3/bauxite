@@ -1,14 +1,45 @@
 <?php
 
+/*
+ * These frontend controllers require the user to be logged in
+ * All route names are prefixed with 'frontend.'
+ * These routes can not be hit if the password is expired
+ */
+Route::group(['middleware' => ['auth', 'password_expires']], function () {
+    Route::group([
+        'namespace' => 'Modules\Nintei\Http\Controllers\Frontend\User',
+        'as' => 'user.',
+    ], function () {
+        /*
+         * User Dashboard Specific
+         */
+        Route::get('dashboard', 'DashboardController@index')->name('dashboard');
+
+        /*
+         * User Account Specific
+         */
+        Route::get('account', 'AccountController@index')->name('account');
+
+        /*
+         * User Profile Specific
+         */
+        Route::patch('profile/update', 'ProfileController@update')->name('profile.update');
+    });
+});
+
 /**
  * Frontend Access Controllers
  * All route names are prefixed with 'frontend.auth'.
  */
-Route::group(['namespace' => 'Auth', 'as' => 'auth.'], function () {
+Route::group([
+    // 'namespace' => 'Auth',
+    'namespace' => 'Modules\Nintei\Http\Controllers\Frontend\Auth',
+    'as' => 'auth.',
+], function () {
 
     /*
-    * These routes require the user to be logged in
-    */
+     * These routes require the user to be logged in
+     */
     Route::group(['middleware' => 'auth'], function () {
         Route::get('logout', 'LoginController@logout')->name('logout');
 

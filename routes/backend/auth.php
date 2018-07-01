@@ -4,9 +4,10 @@
  * All route names are prefixed with 'admin.auth'.
  */
 Route::group([
-    'prefix'     => 'auth',
-    'as'         => 'auth.',
-    'namespace'  => 'Auth',
+    'prefix' => 'auth',
+    'as' => 'auth.',
+    // 'namespace' => 'Auth',
+    'namespace' => '\Modules\Nintei\Http\Controllers\Backend\Auth',
 ], function () {
     Route::group([
         'middleware' => 'role:administrator',
