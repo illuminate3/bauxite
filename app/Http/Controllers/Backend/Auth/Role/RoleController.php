@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Backend\Auth\Role;
 
-use App\Events\Backend\Auth\Role\RoleDeleted;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Backend\Auth\Role\ManageRoleRequest;
-use App\Http\Requests\Backend\Auth\Role\StoreRoleRequest;
-use App\Http\Requests\Backend\Auth\Role\UpdateRoleRequest;
+use Modules\Nintei\Events\Backend\Auth\Role\RoleDeleted;
+use Modules\Nintei\Http\Requests\Backend\Auth\Role\ManageRoleRequest;
+use Modules\Nintei\Http\Requests\Backend\Auth\Role\StoreRoleRequest;
+use Modules\Nintei\Http\Requests\Backend\Auth\Role\UpdateRoleRequest;
 use Modules\Nintei\Models\Auth\Role;
 use Modules\Nintei\Repositories\Backend\Auth\PermissionRepository;
 use Modules\Nintei\Repositories\Backend\Auth\RoleRepository;

@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Backend\Auth\User;
 use Modules\Nintei\Models\Auth\User;
 use App\Http\Controllers\Controller;
 use Modules\Nintei\Repositories\Backend\Auth\SessionRepository;
-use App\Http\Requests\Backend\Auth\User\ManageUserRequest;
+use Modules\Nintei\Http\Requests\Backend\Auth\User\ManageUserRequest;
 
 /**
  * Class UserSessionController.

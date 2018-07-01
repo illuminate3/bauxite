@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Backend\Auth\User;
 
-use App\Events\Backend\Auth\User\UserDeleted;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Backend\Auth\User\ManageUserRequest;
-use App\Http\Requests\Backend\Auth\User\StoreUserRequest;
-use App\Http\Requests\Backend\Auth\User\UpdateUserRequest;
+use Modules\Nintei\Events\Backend\Auth\User\UserDeleted;
+use Modules\Nintei\Http\Requests\Backend\Auth\User\ManageUserRequest;
+use Modules\Nintei\Http\Requests\Backend\Auth\User\StoreUserRequest;
+use Modules\Nintei\Http\Requests\Backend\Auth\User\UpdateUserRequest;
 use Modules\Nintei\Models\Auth\User;
 use Modules\Nintei\Repositories\Backend\Auth\PermissionRepository;
 use Modules\Nintei\Repositories\Backend\Auth\RoleRepository;

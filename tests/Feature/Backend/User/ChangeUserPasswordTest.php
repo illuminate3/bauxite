@@ -7,7 +7,7 @@ use Modules\Nintei\Models\Auth\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use App\Events\Backend\Auth\User\UserPasswordChanged;
+use Modules\Nintei\Events\Backend\Auth\User\UserPasswordChanged;
 
 class ChangeUserPasswordTest extends TestCase
 {

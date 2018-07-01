@@ -7,8 +7,8 @@ use Modules\Nintei\Models\Auth\Role;
 use Modules\Nintei\Models\Auth\User;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Database\Eloquent\Model;
-use App\Events\Backend\Auth\User\UserCreated;
-use App\Events\Backend\Auth\User\UserUpdated;
+use Modules\Nintei\Events\Backend\Auth\User\UserCreated;
+use Modules\Nintei\Events\Backend\Auth\User\UserUpdated;
 use Modules\Nintei\Repositories\Backend\Auth\UserRepository;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 

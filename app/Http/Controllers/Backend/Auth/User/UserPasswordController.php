@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Backend\Auth\User;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Backend\Auth\User\ManageUserRequest;
-use App\Http\Requests\Backend\Auth\User\UpdateUserPasswordRequest;
+use Modules\Nintei\Http\Requests\Backend\Auth\User\ManageUserRequest;
+use Modules\Nintei\Http\Requests\Backend\Auth\User\UpdateUserPasswordRequest;
 use Modules\Nintei\Models\Auth\User;
 use Modules\Nintei\Repositories\Backend\Auth\UserRepository;
 

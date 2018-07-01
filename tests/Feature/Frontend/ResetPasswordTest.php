@@ -7,7 +7,7 @@ use Modules\Nintei\Models\Auth\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use App\Notifications\Frontend\Auth\UserNeedsPasswordReset;
+use Modules\Nintei\Notifications\Frontend\Auth\UserNeedsPasswordReset;
 
 class ResetPasswordTest extends TestCase
 {

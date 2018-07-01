@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Backend\Auth\User;
 use Modules\Nintei\Models\Auth\User;
 use Modules\Nintei\Models\Auth\SocialAccount;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Backend\Auth\User\ManageUserRequest;
+use Modules\Nintei\Http\Requests\Backend\Auth\User\ManageUserRequest;
 use App\Repositories\Backend\Access\User\SocialRepository;
 
 /**

@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers\Frontend\Auth;
 
-use App\Events\Frontend\Auth\UserRegistered;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\RegisterRequest;
-use Modules\Nintei\Repositories\Frontend\Auth\UserRepository;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Modules\Nintei\Events\Frontend\Auth\UserRegistered;
 use Modules\Nintei\Helpers\Frontend\Auth\Socialite;
+use Modules\Nintei\Repositories\Frontend\Auth\UserRepository;
 
 /**
  * Class RegisterController.

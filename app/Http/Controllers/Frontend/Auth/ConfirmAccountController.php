@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Frontend\Auth;
 
 use App\Http\Controllers\Controller;
 use Modules\Nintei\Repositories\Frontend\Auth\UserRepository;
-use App\Notifications\Frontend\Auth\UserNeedsConfirmation;
+use Modules\Nintei\Notifications\Frontend\Auth\UserNeedsConfirmation;
 
 /**
  * Class ConfirmAccountController.

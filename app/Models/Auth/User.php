@@ -3,15 +3,15 @@
 namespace App\Models\Auth;
 
 use App\Models\Traits\Uuid;
-use Spatie\Permission\Traits\HasRoles;
-use Illuminate\Notifications\Notifiable;
-use Modules\Nintei\Models\Auth\Traits\Scope\UserScope;
-use Modules\Nintei\Models\Auth\Traits\Method\UserMethod;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Modules\Nintei\Models\Auth\Traits\SendUserPasswordReset;
-use Modules\Nintei\Models\Auth\Traits\Attribute\UserAttribute;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Modules\Nintei\Models\Auth\Traits\Attribute\UserAttribute;
+use Modules\Nintei\Models\Auth\Traits\Method\UserMethod;
 use Modules\Nintei\Models\Auth\Traits\Relationship\UserRelationship;
+use Modules\Nintei\Models\Auth\Traits\Scope\UserScope;
+use Modules\Nintei\Models\Auth\Traits\SendUserPasswordReset;
+use Spatie\Permission\Traits\HasRoles;
 
 /**
  * Class User.
@@ -19,13 +19,13 @@ use Modules\Nintei\Models\Auth\Traits\Relationship\UserRelationship;
 class User extends Authenticatable
 {
     use HasRoles,
-        Notifiable,
-        SendUserPasswordReset,
-        SoftDeletes,
-        UserAttribute,
-        UserMethod,
-        UserRelationship,
-        UserScope,
+    Notifiable,
+    SendUserPasswordReset,
+    SoftDeletes,
+    UserAttribute,
+    UserMethod,
+    UserRelationship,
+    UserScope,
         Uuid;
 
     /**

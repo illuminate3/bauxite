@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Frontend\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Frontend\Auth\ResetPasswordRequest;
+use Modules\Nintei\Http\Requests\Frontend\Auth\Role\ResetPasswordRequest;
 use Modules\Nintei\Repositories\Frontend\Auth\UserRepository;
 use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Foundation\Auth\ResetsPasswords;

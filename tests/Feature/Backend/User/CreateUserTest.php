@@ -7,9 +7,9 @@ use Modules\Nintei\Models\Auth\User;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Notification;
-use App\Events\Backend\Auth\User\UserCreated;
+use Modules\Nintei\Events\Backend\Auth\User\UserCreated;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use App\Notifications\Frontend\Auth\UserNeedsConfirmation;
+use Modules\Nintei\Notifications\Frontend\Auth\UserNeedsConfirmation;
 
 class CreateUserTest extends TestCase
 {

@@ -2,13 +2,13 @@
 
 namespace Tests\Feature\Frontend;
 
-use Tests\TestCase;
-use Modules\Nintei\Models\Auth\User;
-use Illuminate\Support\Facades\Event;
-use App\Events\Frontend\Auth\UserLoggedIn;
-use App\Events\Frontend\Auth\UserLoggedOut;
-use Illuminate\Validation\ValidationException;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Event;
+use Illuminate\Validation\ValidationException;
+use Modules\Nintei\Events\Frontend\Auth\UserLoggedIn;
+use Modules\Nintei\Events\Frontend\Auth\UserLoggedOut;
+use Modules\Nintei\Models\Auth\User;
+use Tests\TestCase;
 
 class UserLoginTest extends TestCase
 {

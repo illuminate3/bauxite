@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Backend\Auth\User;
 
 use App\Exceptions\GeneralException;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Backend\Auth\User\ManageUserRequest;
+use Modules\Nintei\Http\Requests\Backend\Auth\User\ManageUserRequest;
 use Modules\Nintei\Helpers\Auth\Auth;
 use Modules\Nintei\Models\Auth\User;
 

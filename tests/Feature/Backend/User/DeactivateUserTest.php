@@ -5,8 +5,8 @@ namespace Tests\Backend\User;
 use Tests\TestCase;
 use Modules\Nintei\Models\Auth\User;
 use Illuminate\Support\Facades\Event;
-use App\Events\Backend\Auth\User\UserDeactivated;
-use App\Events\Backend\Auth\User\UserReactivated;
+use Modules\Nintei\Events\Backend\Auth\User\UserDeactivated;
+use Modules\Nintei\Events\Backend\Auth\User\UserReactivated;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class DeactivateUserTest extends TestCase

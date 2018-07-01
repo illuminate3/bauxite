@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Frontend\User;
 
 use App\Http\Controllers\Controller;
+use modules\Nintei\Http\Requests\Frontend\User\UpdateProfileRequest;
 use Modules\Nintei\Repositories\Frontend\Auth\UserRepository;
-use App\Http\Requests\Frontend\User\UpdateProfileRequest;
 
 /**
  * Class ProfileController.

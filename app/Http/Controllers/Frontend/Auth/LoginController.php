@@ -2,15 +2,15 @@
 
 namespace App\Http\Controllers\Frontend\Auth;
 
-use App\Events\Frontend\Auth\UserLoggedIn;
-use App\Events\Frontend\Auth\UserLoggedOut;
 use App\Exceptions\GeneralException;
 use App\Http\Controllers\Controller;
-use Modules\Nintei\Repositories\Frontend\Auth\UserSessionRepository;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
+use Modules\Nintei\Events\Frontend\Auth\UserLoggedIn;
+use Modules\Nintei\Events\Frontend\Auth\UserLoggedOut;
 use Modules\Nintei\Helpers\Auth\Auth;
 use Modules\Nintei\Helpers\Frontend\Auth\Socialite;
+use Modules\Nintei\Repositories\Frontend\Auth\UserSessionRepository;
 
 /**
  * Class LoginController.

@@ -6,9 +6,9 @@ use Tests\TestCase;
 use Modules\Nintei\Models\Auth\User;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Notification;
-use App\Events\Backend\Auth\User\UserUpdated;
+use Modules\Nintei\Events\Backend\Auth\User\UserUpdated;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use App\Notifications\Frontend\Auth\UserNeedsConfirmation;
+use Modules\Nintei\Notifications\Frontend\Auth\UserNeedsConfirmation;
 
 class UpdateUserTest extends TestCase
 {

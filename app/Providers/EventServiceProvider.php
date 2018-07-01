@@ -31,7 +31,7 @@ class EventServiceProvider extends ServiceProvider
         /*
          * Auth Subscribers
          */
-        \App\Listeners\Frontend\Auth\UserEventListener::class,
+        \Modules\Nintei\Listeners\Frontend\Auth\UserEventListener::class,
 
         /*
          * Backend Subscribers
@@ -40,8 +40,8 @@ class EventServiceProvider extends ServiceProvider
         /*
          * Auth Subscribers
          */
-        \App\Listeners\Backend\Auth\User\UserEventListener::class,
-        \App\Listeners\Backend\Auth\Role\RoleEventListener::class,
+        \Modules\Nintei\Listeners\Backend\Auth\User\UserEventListener::class,
+        \Modules\Nintei\Listeners\Backend\Auth\Role\RoleEventListener::class,
     ];
 
     /**

@@ -8,7 +8,7 @@ use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use App\Notifications\Frontend\Auth\UserNeedsConfirmation;
+use Modules\Nintei\Notifications\Frontend\Auth\UserNeedsConfirmation;
 
 class UpdateUserAccountTest extends TestCase
 {

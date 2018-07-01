@@ -2,14 +2,14 @@
 
 namespace Tests\Backend\User;
 
-use Tests\TestCase;
-use Modules\Nintei\Models\Auth\User;
+use Modules\Nintei\Events\Backend\Auth\User\UserConfirmed;
+use Modules\Nintei\Events\Backend\Auth\User\UserUnconfirmed;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Notification;
-use App\Events\Backend\Auth\User\UserConfirmed;
-use App\Events\Backend\Auth\User\UserUnconfirmed;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use App\Notifications\Backend\Auth\UserAccountActive;
+use Modules\Nintei\Models\Auth\User;
+use Modules\Nintei\Notifications\Backend\Auth\UserAccountActive;
+use Tests\TestCase;
 
 class ConfirmUserTest extends TestCase
 {

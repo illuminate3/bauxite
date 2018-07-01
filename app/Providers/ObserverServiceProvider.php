@@ -2,9 +2,9 @@
 
 namespace App\Providers;
 
-use Modules\Nintei\Models\Auth\User;
-use App\Observers\User\UserObserver;
 use Illuminate\Support\ServiceProvider;
+use Modules\Nintei\Models\Auth\User;
+use Modules\Nintei\Observers\User\UserObserver;
 
 /**
  * Class ObserverServiceProvider.
