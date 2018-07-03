@@ -4,7 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Route;
-use Modules\Nintei\Models\Auth\User;
+
+// use Modules\Nintei\Models\Auth\User;
 
 /**
  * Class RouteServiceProvider.
@@ -34,11 +35,11 @@ class RouteServiceProvider extends ServiceProvider
         /*
          * Allow this to select all users regardless of status
          */
-        $this->bind('user', function ($value) {
-            $user = new User;
+        // $this->bind('user', function ($value) {
+        //     $user = new User;
 
-            return User::withTrashed()->where($user->getRouteKeyName(), $value)->first();
-        });
+        //     return User::withTrashed()->where($user->getRouteKeyName(), $value)->first();
+        // });
 
         parent::boot();
     }

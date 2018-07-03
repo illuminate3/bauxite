@@ -3,8 +3,9 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Modules\Nintei\Models\Auth\User;
-use Modules\Nintei\Observers\User\UserObserver;
+
+// use Modules\Nintei\Models\Auth\User;
+// use Modules\Nintei\Observers\User\UserObserver;
 
 /**
  * Class ObserverServiceProvider.
@@ -18,7 +19,7 @@ class ObserverServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        User::observe(UserObserver::class);
+        // User::observe(UserObserver::class);
     }
 
     /**
