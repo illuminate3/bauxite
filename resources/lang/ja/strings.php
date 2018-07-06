@@ -11,7 +11,7 @@ return [
     | Regardless where it is placed, a string can be listed here so it is easily
     | found in a intuitive way.
     |
-    */
+     */
 
     'backend' => [
         'access' => [
@@ -30,7 +30,8 @@ return [
         'general' => [
             'all_rights_reserved' => 'All Rights Reserved.',
             'are_you_sure' => '本当ですか？',
-            'boilerplate_link' => 'Laravel 5 Boilerplate',
+            'corporate_link' => 'https://github.com/illuminate3',
+            'corporate_name' => 'Bauxite',
             'continue' => 'Continue',
             'member_since' => '会員登録日',
             'minutes' => ' 分',
@@ -123,7 +124,7 @@ return [
         ],
 
         'general' => [
-            'joined'        => 'Joined',
+            'joined' => 'Joined',
         ],
 
         'user' => [

@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => Modules\Nintei\Models\Auth\User::class,
+        'model' => '',
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

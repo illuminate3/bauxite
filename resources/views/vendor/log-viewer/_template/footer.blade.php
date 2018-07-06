@@ -5,7 +5,7 @@
                 LogViewer - <span class="label label-info">version {{ log_viewer()->version() }}</span>
             </div>
             <div class="col-md-6 text-right">
-                Created with <i class="fa fa-heart"></i> by ARCANEDEV <sup>&copy;</sup>
+                Created with <i class="fa fa-heart"></i> by ARCANEDEV 5456465456456 <sup>&copy;</sup>
             </div>
         </div>
     </div>

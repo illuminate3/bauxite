@@ -67,8 +67,9 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            // 'model' => App\Models\Auth\User::class,
-            'model' => \Modules\Nintei\Models\Auth\User::class,
+            'model' => App\Models\Auth\User::class,
+            // 'model' => Modules\Nintei\Models\Auth\User::class,
+            // 'model' => env('USER_MODEL', 'App\Models\Auth\User::class'),
         ],
 
         // 'users' => [
